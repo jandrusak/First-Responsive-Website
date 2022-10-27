@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  /* every string is a row and every space is a column */
+  grid-template-areas:
+    ""
+    "";
+}
+
+main {
+  grid-area: main;
+}
