@@ -1,11 +1,87 @@
 .container {
   display: grid;
+  height: 110vh;
   /* every string is a row and every space is a column */
   grid-template-areas:
-    ""
-    "";
+    "header"
+    "column";
 }
 
 main {
-  grid-area: main;
+  grid-area: header;
+  background-color: teal;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+aside {
+  grid-area: column;
+  display: flex;
+  background-color: rgb(25, 25, 25);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+  gap: 6rem;
+}
+
+h1 {
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+}
+
+.rectangle1 {
+  height: 20px;
+  width: 130px;
+  background-color: rgb(5, 128, 222);
+}
+
+.rectangle2 {
+  height: 20px;
+  width: 130px;
+  background-color: rgb(227, 116, 6);
+  /* align-items: center; */
+}
+
+.rectangle3 {
+  height: 20px;
+  width: 130px;
+  background-color: teal;
+  /* align-items: center; */
+}
+
+@media (max-width: 576px) {
+    main {
+      background-color: rgb(13, 194, 255);
+  }
+  .header {
+      width: 45%;
+  }
+  aside {
+      background-color: white;
+      color:rgb(25, 25, 25);
+      flex-direction: column;
+      gap: 0;
+      margin-top: 5%;
+  }
+  section {
+    width: 25%;
+  }
+  h3 {
+    margin: top 10px;
+    margin-bottom: 0px;
+  }
+   p {
+    margin-bottom: 65px;
+   }
+  }
